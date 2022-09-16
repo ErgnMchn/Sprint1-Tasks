@@ -12,7 +12,7 @@ public class Main {
        List<Triangle> triangles = new ArrayList<>();
 
         while (!exit) {
-            System.out.println("Please enter the name of the triangle and length of its sizes with separator comme");
+            System.out.println("Please enter the name of the triangle and length of its sizes with separator comma.");
             Scanner scan = new Scanner(System.in);
             String input = scan.nextLine();
             input = input.trim();
@@ -25,6 +25,10 @@ public class Main {
             double firstSideLength = Double.parseDouble(inputToArray[1].trim());
             double secondSideLength = Double.parseDouble(inputToArray[2].trim());
             double thirdSideLength = Double.parseDouble(inputToArray[3].trim());
+            if(firstSideLength==0 || secondSideLength==0 || thirdSideLength==0){
+                System.out.println("Please write trianble size starting from 1.");
+                continue;
+            }
 
             triangles.add(new Triangle(triangleName, firstSideLength, secondSideLength, thirdSideLength));
 

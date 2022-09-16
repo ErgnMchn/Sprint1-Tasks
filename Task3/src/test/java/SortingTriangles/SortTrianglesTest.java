@@ -15,9 +15,8 @@ class SortTrianglesTest {
         trianglesAreas.add(new Triangle("triangle1",20.5,5.7,30.5));
         trianglesAreas.add(new Triangle("triangle3",9,15.5,1));
 
-        //Act
         List<Triangle> sortedTriangles = SortTriangles.sortTrianglesDescendingOrder(trianglesAreas);
-        //Assert
+
         assertEquals(104.1, sortedTriangles.get(0).getArea());
         assertEquals(39.31, sortedTriangles.get(1).getArea());
         assertEquals(19.08, sortedTriangles.get(2).getArea());

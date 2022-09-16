@@ -11,21 +11,17 @@ class ChessBoard {
         if (i % 2 == 0 && j % 2 == 0) {
           chessBoardArr[i][j] = "*";
           continue;
-          // System.out.print("*");
         }
         if (i % 2 == 0 && j % 2 != 0) {
           chessBoardArr[i][j] = " ";
           continue;
-          // System.out.print(" ");
         }
         if (i % 2 != 0 && j % 2 == 0) {
           chessBoardArr[i][j] = " ";
           continue;
-          // System.out.print(" ");
         }
         if (i % 2 != 0 && j % 2 != 0) {
           chessBoardArr[i][j] = "*";
-          //  System.out.print("*");
         }
       }
     }
